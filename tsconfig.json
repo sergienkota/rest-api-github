@@ -1,0 +1,35 @@
+{
+    "include": [
+        "src"
+    ],
+    "compilerOptions": {
+        "strict": true,
+        "esModuleInterop": true,
+        "baseUrl": "./",
+        "paths": {
+            "common/*": [
+                "src/common/*"
+            ],
+            "components/*": [
+                "src/components/*"
+            ],
+            "hooks/*": [
+                "src/hooks/*"
+            ],
+            "services/*": [
+                "src/services/*"
+            ],
+            "context/*": [
+                "src/context/*"
+            ],
+            "content/*": [
+                "src/content/*"
+            ]
+        },
+        "lib": [
+            "dom",
+            "es2020"
+        ],
+        "jsx": "react-jsx"
+    }
+}
