@@ -1,10 +1,11 @@
 import './styles.css';
 
+import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { AppContextProvider } from 'context/AppContext';
+import { AppContextProvider } from './context/AppContext';
 import Filters from './components/Filters';
-import Table from './components/Table';
 import { Container, Typography } from '@mui/material';
+import TableResults from './components/TableResult';
 
 const queryClient = new QueryClient();
 
@@ -17,7 +18,7 @@ const App = () => {
             REST API GitHub example
           </Typography>
           <Filters />
-          <Table />
+          <TableResults />
         </Container>
       </AppContextProvider>
     </QueryClientProvider>

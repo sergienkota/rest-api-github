@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 
-import { GithubData } from '../../common/types';
+import { ApplicationData } from '../../common/types';
 
-export type AppContextData = GithubData;
+export type AppContextData = ApplicationData;
 
 const AppContext = React.createContext<AppContextData | undefined>(undefined);
 

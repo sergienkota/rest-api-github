@@ -7,11 +7,7 @@ const axiosInstance = axios.create({
 const queryFunction = async (queryKey: string) => {
   const { data } = await axiosInstance.get(`${queryKey}`);
 
-  console.log('data: ');
-  console.log(data);
   return data;
 };
 
-export default {
-  queryFunction,
-};
+export default { queryFunction };

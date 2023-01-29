@@ -5,8 +5,8 @@ import {
   Select,
   MenuItem,
 } from '@mui/material';
-import { Language } from 'common/types';
-import { useAppContext } from 'context/AppContext';
+import { Language } from '../../common/types';
+import { useAppContext } from '../../context/AppContext';
 
 const LanguageSelect = () => {
   const { language, setLanguage } = useAppContext();
@@ -27,8 +27,8 @@ const LanguageSelect = () => {
           label="Language"
         >
           {Object.values(Language).map((language) => (
-            <MenuItem key={language} value={language}>
-              {language.toLowerCase()}
+            <MenuItem key={language} value={language.toLowerCase()}>
+              {language}
             </MenuItem>
           ))}
         </Select>
